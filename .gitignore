@@ -1,0 +1,55 @@
+# 编译输出和依赖目录
+node_modules/                # Node.js 依赖（通常项目根目录或子目录，如 web/node_modules/）
+vendor/                      # PHP Composer 依赖
+venv/                        # Python 虚拟环境
+env/                         # Python 环境
+__pycache__/                 # Python 字节码
+*.pyc                        # Python 编译文件
+target/                      # Java/Maven 编译输出
+build/                       # 常见编译输出目录
+dist/                        # 打包输出目录
+out/                         # 常见输出目录
+
+# IDE 和编辑器配置
+.vscode/                     # VSCode 配置（如果团队统一配置可保留，但通常忽略个人设置）
+.idea/                       # IntelliJ IDEA
+*.swp                        # Vim 交换文件
+*.swo                        # Vim 交换文件
+.DS_Store                    # macOS 文件夹属性文件
+Thumbs.db                    # Windows 缩略图缓存
+
+# 环境变量和密钥文件
+.env                         # 环境变量文件（可能包含敏感信息）
+.env.local
+.env.*.local
+*.pem                        # 私钥文件
+*.key                        # 密钥文件
+secrets.*                    # 敏感配置文件
+
+# 日志文件和临时文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+*.tmp
+*.temp
+
+# 测试覆盖率报告
+coverage/
+.nyc_output/
+
+# 打包文件
+*.zip
+*.tar.gz
+*.rar
+
+# 操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
